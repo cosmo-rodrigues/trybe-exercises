@@ -1,0 +1,3 @@
+#!/bin/bash
+# Eu sou Tryber e...
+echo "Eu sou Tryber"
