@@ -1,3 +1,3 @@
 #!/bin/bash
-# Eu sou Tryber e...
-echo "Eu sou Tryber"
+# Eu sou Tryber e vou ter muito sucesso na programação!
+echo "VEM PRA TRYBE VOCÊ TAMBÉM!"
