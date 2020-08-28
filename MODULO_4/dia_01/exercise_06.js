@@ -1,5 +1,5 @@
 //Font: https://www.ichess.net/blog/chess-pieces-moves/
-var chessPiece=prompt("Type your chess piece:",chessPiece);
+var chessPiece=prompt("Type your chess piece:");
 var pieceResult=chessPiece.toLowerCase();
 if(pieceResult=="pawn"){
     console.log("Pawns have the fewest options of movement of all the pieces. On their first move, they have the option to go one or two squares forward. On all other moves, a pawn can only go one square straight forward. The exception to this is when pawns capture the opponent’s chess pieces – then they move forward one square diagonally. Moreover, there is one exceptional rule for pawn moves which is called 'en passant'.")
