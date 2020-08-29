@@ -1,5 +1,8 @@
 let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
-let bigger
+let bigger = 0;
 for(let count in numbers){
-Math.max(0,numbers[count]);
+    if(numbers[count]>bigger){
+        bigger=numbers[count];
+    }
 }
+console.log(bigger)
