@@ -1,0 +1,11 @@
+document.getElementById("stack").style.backgroundColor="red";
+document.getElementsByClassName("column_left")[0].style.backgroundColor="blue";
+document.getElementsByClassName("column_right")[0].style.backgroundColor="green";
+document.querySelectorAll("div.column_left > div")[0].style.backgroundColor="#ed40bc";
+document.querySelectorAll("div.column_left > div")[1].style.backgroundColor="#ed40bc";
+document.querySelectorAll("div.column_right > div")[0].style.backgroundColor="purple";
+document.querySelectorAll("div.column_right > div")[1].style.backgroundColor="purple";
+document.querySelectorAll("div.column_right > div > div")[1].style.backgroundColor="yellow";
+document.querySelectorAll("div.column_left > div > div")[1].style.backgroundColor="yellow";
+document.querySelectorAll("div.column_left > div > div")[0].style.backgroundColor="pink";
+document.querySelectorAll("div.column_right > div > div")[0].style.backgroundColor="pink";
