@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let titulo = document.createElement("h1")
+        titulo.textContent="Meu Primeiro HTML Com JS";
+        document.body.appendChild(titulo);
+        titulo.style.color="green";
+        let titulo_02 = document.createTextNode(" - CFB Cursos");
+        titulo.appendChild(titulo_02);
+    </script>
+    <input type="text" id="formulario_01">
+    <button id="btn_adicionar">Adicionar</button><br>
+    <ul id="itens_formulario"><h3>Itens Adicinados</h3>
+    </ul>
+<script>
+    let botao = document.getElementById("btn_adicionar")
+    botao.addEventListener("click",function(){
+        let lista = document.getElementById("itens_formulario");
+    let itensDigitados = document.getElementById("formulario_01");
+    let liItensDigitados = document.createElement("li");
+    liItensDigitados.innerText=itensDigitados.value;
+    lista.appendChild(liItensDigitados);
+    itensDigitados.value="";
+    itensDigitados.focus();
+    })
+</script>
+
+</body>
+</html>
