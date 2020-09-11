@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset=utf-8 />
+<title>Calculator</title>
+<style>
+    body{
+        margin-left: 10px;
+        background-color:rgb(28, 1, 53);
+        font-family: monospace;
+        color: rgb(167, 4, 167);
+        font-weight: bolder;
+    }
+    button{
+      color: rgb(121, 2, 2);
+      background-color: slateblue;
+      font-weight: bolder;
+      font-size: large;
+    }
+    h3{
+      font-size: xx-large;
+      color: tomato;
+    }
+    p{
+      color: yellow;
+    }
+    h1{
+      color: yellowgreen;
+    }
+    .half{
+      color: rgb(30, 255, 0);
+    }
+    .area{
+      color: rgb(223, 197, 50);
+    }
+</style>
+</head>
+<body>
+    <h1>Calculator</h1>
+  <label>Square this number:
+    <input type="number" id="square-input" size="2">
+  </label>
+  <button id="square-button">Calculate</button>
+  <br><br>  
+  <label class="half">Half this number:
+    <input type="number" id="half-input" size="2">
+  </label>
+  <button id="half-button">Calculate</button>
+  <br><br>  
+  <label>
+    Fraction:
+    <input type="number" id="percent1-input" size="2">
+  </label>
+  <label>
+    Whole:
+    <input type="number" id="percent2-input" size="2">
+  </label>
+  <button id="percent-button">Calculate</button>
+  <br><br>  
+  <label class="area">Calculate area of circle with radius:
+    <input type="number" id="area-input" size="2">
+  </label>
+  <button id="area-button">Calculate</button> 
+  <br><br>
+  <div>
+      <h3>Results</h3>
+      <!--Solução aqio-->
+      <p id="solution"></p>
+</div>
+ <script>
+//Write a function called squareNumber that will take one argument (a number), square that number, and return the result. It should also log a string like "The result of squaring the number 3 is 9."
+let squareNumber = document.querySelector("#square-input");
+let squareButon = document.querySelector("#square-button");
+let result1 = document.querySelector("#solution");
+squareButon.addEventListener("click",function(){
+  result1.innerHTML=`The result of squaring the number ${squareNumber.value} is ${squareNumber.value**2}.`
+  squareNumber.value="";
+  squareNumber.focus();
+});
+//Write a function called halfNumber that will take one argument (a number), divide it by 2, and return the result. It should also log a string like "Half of 5 is 2.5.".
+  let halfNumber = document.getElementById("half-input");
+  let halfButton = document.getElementById("half-button");
+  halfButton.addEventListener("click",function(){
+    result1.innerHTML=`Half of ${halfNumber.value} is ${halfNumber.value/2}.`;
+  halfNumber.value="";
+  halfNumber.focus();
+});
+//Write a function called percentOf that will take two numbers, figure out what percent the first number represents of the second number, and return the result. It should also log a string like "2 is 50% of 4."
+ let percent1Input = document.getElementById("percent1-input");
+ let percent2Input = document.getElementById("percent2-input");
+ let percentButton = document.getElementById("percent-button");
+ percentButton.addEventListener("click",function(){
+   let result2 = (percent1Input.value*100)/percent2Input.value;
+   result1.innerHTML=`${parseInt(percent1Input.value)} is ${result2}% of ${percent2Input.value}.`
+   percent1Input.value="";
+   percent2Input.value="";
+   percent1Input.focus();
+ });
+ //Write a function called areaOfCircle that will take one argument (the radius), calculate the area based on that, and return the result. It should also log a string like "The area for a circle with radius 2 is 12.566370614359172."
+  let areaInput = document.getElementById("area-input");
+  let areaButton = document.getElementById("area-button");
+  areaButton.addEventListener("click",function(){
+    const piNumber = 3.141592;
+    let result3 = piNumber*(areaInput.value**2);
+    result1.innerHTML=`The area for a circle with radius ${areaInput.value} is ${result3}.`;
+    areaInput.innerHTML="";
+    areaInput.focus();
+  })
+ </script>
+</body>
+</html>

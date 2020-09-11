@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="utf-8" />
+  <title>Mad Libs Maker</title>
+  <style>
+      body{
+          margin-left: 10px;
+          background-color: cornflowerblue;
+          text-align: center;
+      }
+      li{
+          font-size: x-large;
+          font-weight: bolder;
+          padding: 12px;
+          margin-left: 5px;
+          background-color: crimson;
+          width: 80%;
+          text-align: left;
+      }
+      button{
+          margin-top: 10px;
+          margin-left: 15px;
+          font-weight: bold;
+          font-size: x-large;
+          background-color: blue;
+          border-radius: 30%;
+      }
+      #story{
+          background-color: ivory;
+          color: black;
+          font-size: xx-large;
+          font-weight: bolder;
+          width: 80%;
+          margin-top: 20px;
+      }
+  </style>
+ </head>
+ <body>
+ 
+ <h1>Mad Libs</h1>
+ 
+ <ul>
+  <li>Noun: <input type="text" id="noun">
+  <li>Adjective: <input type="text" id="adjective">
+  <li>Someone's Name: <input type="text" id="person">
+ </ul>
+ 
+ <button id="lib-button">Lib it!</button>
+  
+ <div id="story"></div>
+ <script>
+let noun = document.querySelector("#noun");
+let adjective = document.querySelector("#adjective");
+let person = document.querySelector("#person");
+let libBtn = document.querySelector("#lib-button");
+let story = document.querySelector("#story");
+libBtn.addEventListener("click",function(){
+story.innerText=person.value+" "+adjective.value+" de "+noun.value;
+})
+person.innerHTML="";
+adjective.innerHTML="";
+noun.innerHTML="";
+ </script>  
+ </body>
+</html>
