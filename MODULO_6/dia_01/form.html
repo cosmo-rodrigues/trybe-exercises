@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang='pt-BR'>
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="style.css">
+<title>Document</title>
+</head>
+
+<body>
+<div class='title'>
+<h1>Trabalhe Conosco</h1>
+<hr>
+</div>
+<form class='control'>
+<div class='field'>
+<label class='label' for='name'>Nome:</label>
+<div class='control'>
+<input class='input is-rounded' type='text' maxlength='40' id='name' placeholder='Digite seu nome'
+required='required'>
+</div>
+<div class='field'>
+<label class="label">Email</label>
+<div class='control'>
+<input class='input is-rounded' type='email' placeholder='Digite seu email' required='required'>
+</div>
+</div>
+<div class='field'>
+<label class='label' for='cpf'>CPF</label>
+<div class='control'>
+<input class='input is-rounded' type='number' maxlength='11' name='cpf' id='cpf'
+placeholder='Digite seu CPF' required='required'>
+</div>
+</div>
+<label class='label' for=''>Endereço</label>
+<div class='field'>
+<input class='input is-rounded' maxlength='200' name='endereco' id='endereco'
+placeholder='Digite seu endereço' required='required'>
+</div>
+<label class='label' for='cidade'>Cidade</label>
+<div class='field'>
+<input class='input is-rounded' type='email' maxlength='28' name='cidade' id='cidade'
+placeholder='Digite sua cidade' required='required'>
+</div>
+<label class='label' for='estados'>Estados</label>
+<div class='field select'>
+<select name='estados' id='estados' required='required'>
+<option value='null'></option>
+</select>
+</div>
+<div class='field'>
+<div class='label'>
+<p>Tipo de Residência</p>
+</div>
+<label class='radio' for='casa'>Casa</label>
+<input type='radio' type='radio' name='casa' id='casa'>
+<label class='radio' for='apartamento'>Apartamento</label>
+<input type='radio' name='casa' id='apartamento'>
+</div>
+</div>
+<div class='field'>
+<label class='label' for='curriculo'>Resuno do Curriculo</label>
+<div class='control'>
+<textarea class='textarea is-primary' name='curriculo' id='curriculo' maxlength='1000'
+required='required'></textarea>
+</div>
+<div class='field'>
+<label class='label' for='cargo'>Cargo</label>
+<div class='control'>
+<input class='input is-primary' type='text' id='cargo' maxlength='40' required='required'>
+</div>
+</div>
+<div class='field'>
+<label class='label' for='description'>Descrição do cargo</label>
+<div class='control'>
+<textarea class='textarea is-primary' type='text' id='description' maxlength='500'
+required='required'></textarea>
+</div>
+</div>
+<div class='field'>
+<label class='label' for='date'>Data de inicio</label>
+<div class='control'>
+<input class='input is-rounded' type='date' id='date' required='required'>
+</div>
+</div>
+</div>
+<div class='control'>
+    <input class='button is-success' type='button' name='button' value='Enviar'>
+</div>
+</form>
+<script src='cidade-estados-brasil.min.js'></script>
+<script src='valiDate.js'></script>
+</body>
+
+</html>
