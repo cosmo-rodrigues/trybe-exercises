@@ -7,7 +7,7 @@
 
  Here is documented and recorded all materials and projects that I had complete and I'm doing  during my course of **_Web Developer - Full Stack at TRYBE_**.
 
-Este repositório contém todas as atividades de aprendizagem desenvolvidas por _[Alexandre Faustino Leite](https://www.linkedin.com/in/alexandre-faustino-leite-a95719158/)_ enquanto estuda(va) na [Trybe](https://www.betrybe.com/) :rocket:
+Este repositório contém todas as atividades de aprendizagem desenvolvidas por _[Cosmo Rodrigues](https://www.linkedin.com/in/cosmo-rodrigues-5939871b0/)_ enquanto estuda(va) na [Trybe](https://www.betrybe.com/) :rocket:
 
 _"A Trybe é uma escola do futuro para qualquer pessoa que queira melhorar de vida e construir uma carreira de sucesso em tecnologia, onde a pessoa só paga quando conseguir um bom trabalho."_
 
