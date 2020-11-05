@@ -2,3 +2,12 @@
 const uppercase = (str, callback) => {
   callback(str.toUpperCase());
 }
+
+describe('Verify uppercase function', () => {
+  it('should returl string to uppercase', (done) => {
+    uppercase('Cosmo', (callback) => {
+      expect(callback).toBe('COSMO');
+    });
+    done();
+  });
+}); 
