@@ -9,10 +9,22 @@ const Animals = [
 
 const findAnimalByName = (name) => (
   // Adicione o código aqui.
+  new Promise((resolve, reject) => {
+    setTimeout(() => {
+      const animalFound = Animals.find(animal => animal.name === name);
+      if(animalFound){
+        return resolve(animalFound);
+      }
+      const messageError = 'Nenhum animal com esse nome!'
+      return reject(messageError);
+    }, 1000);
+  })
 )
 
 const getAnimal = (name) => {
   // Adicione o código aqui.
+  return findAnimalByName(name)
+    .then(animal => animal);
 }
 // ---------------------
 
