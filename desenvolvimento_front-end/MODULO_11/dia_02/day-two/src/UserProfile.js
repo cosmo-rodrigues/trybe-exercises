@@ -4,7 +4,7 @@ import Image from './Image';
 class UserProfile extends React.Component {
   render() {
     return (
-      <div>
+      <div key={this.props.user.id} >
         <p>User: {this.props.user.id}</p>
         <p>{this.props.user.name}</p>
         <p>{this.props.user.email}</p>
