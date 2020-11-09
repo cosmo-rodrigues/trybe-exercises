@@ -1,0 +1,12 @@
+.App {
+  box-sizing: border-box;
+  display: block;
+  text-align: center;
+}
+
+.poke-cards {
+  align-items: center;
+  display: flex;
+  flex-flow: wrap;
+  margin: 2% 5%;
+}

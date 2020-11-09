@@ -1,0 +1,8 @@
+.header {
+  border-bottom: solid 2px red;
+  border-right: solid 2px red;
+  border-radius: 25px;
+  box-shadow: 3px 5px red;
+  color: yellow;
+  display: block;
+}

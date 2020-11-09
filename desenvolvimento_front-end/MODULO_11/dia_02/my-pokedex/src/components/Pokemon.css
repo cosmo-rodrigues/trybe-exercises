@@ -1,0 +1,26 @@
+.pokemon-card {
+  align-items: center;
+  background-color: #fca431;
+  border: solid 2px red;
+  border-radius: 25px;
+  box-shadow: 2px 3px red;
+  color: white;
+  display: flex;
+  font-weight: 700;
+  flex-flow: wrap;
+  justify-content: space-around;
+  margin: 5%;
+  padding: 0 3%;
+  width: 100%;
+}
+
+@media screen and (min-width: 769px) {
+  .pokemon-card {
+    align-items: center;
+    display: flex;
+    margin: 3%;
+    max-height: 150px;
+    max-width: 290px;
+    text-align: center;
+  }
+}
