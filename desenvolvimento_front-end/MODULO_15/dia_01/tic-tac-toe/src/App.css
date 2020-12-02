@@ -1,0 +1,105 @@
+:root {
+  --O-color: blue;
+  --X-color: red;
+  --D-color: grey;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  align-items: center;
+  background-color: rgb(61, 3, 95);
+  display: grid;
+  font-family: sans-serif;
+  height: 100vh;
+  justify-content: center;
+}
+
+.title {
+  color: white;
+  font-size: 3rem;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.board {
+  display: grid;
+  grid-template-columns: repeat(3, 150px) ;
+  grid-template-rows: repeat(3, 150);
+  gap: 0.5rem;
+}
+
+.cell {
+  align-items: center;
+  background-color: rgb(128, 128, 128);
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+  display: grid;
+  font-size: 3rem;
+  font-weight: 700;
+  height: 150px;
+  justify-content: center;
+  width: 150px;
+}
+
+.cell.O {
+  background-color: var(--O-color);
+}
+
+.cell.X {
+  background-color: var(--X-color);
+}
+
+.cell.O, .cell.X, .game-over .cell {
+  cursor: not-allowed;
+}
+
+.cell:not(.O):not(.X):hover {
+  box-shadow: 5px 10px 15px;
+}
+
+.game-over {
+  opacity: 0.4;
+}
+
+footer {
+  text-align: center;
+}
+
+.winner-message {
+  margin: 1rem;
+}
+
+.winner-message span.D {
+  color: var(--D-color);
+}
+
+.winner-message span.O {
+  color: var(--O-color);
+}
+
+.winner-message span.X {
+  color: var(--X-color);
+}
+
+button {
+  background-color: green;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0 1px 3px;
+  color: white;
+  font-size: x-large;
+  outline: none;
+  padding: 1rem, 1.5rem;
+  margin-top: 6px;
+  width: 450px;
+}
+
+main {
+  text-align: center;
+}
