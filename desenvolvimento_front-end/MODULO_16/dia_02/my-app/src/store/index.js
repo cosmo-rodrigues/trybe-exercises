@@ -1,8 +1,8 @@
-import { createStore, combineReducers } from 'redux';
-import listReducer from '../reducers';
+import { createStore } from 'redux';
+import rootReducers from '../reducers';
+import { devToolsEnhancer } from 'redux-devtools-extension';
 
-const rootReducer = combineReducers({ listReducer });
 
-const store = createStore(rootReducer);
+const store = createStore(rootReducers, devToolsEnhancer());
 
 export default store;

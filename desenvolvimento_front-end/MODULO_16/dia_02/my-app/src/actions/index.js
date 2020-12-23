@@ -1,1 +1,9 @@
-export const addAssignment = (value) => ({ type: 'ADD_ELEMENT', value });
+export function selectMovie(category, movie) {
+  return {
+    type: 'SELECT_MOVIE',
+    payload: {
+      category,
+      movie,
+    }
+  }
+};

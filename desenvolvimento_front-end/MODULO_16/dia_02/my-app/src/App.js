@@ -1,16 +1,19 @@
 import React from 'react';
 import { Provider } from 'react-redux';
+import Player from './components/Player';
+import SearchBar from './components/SearchBar';
+import Sidebar from './components/Sidebar';
 import store from './store';
-import List from './components/List';
-import InputsList from './components/InputList';
+import './App.css';
 
 class App extends React.Component {
   render() {
     return (
-      <div>
+      <div className="App container-fluid row m-0">
         <Provider store={store}>
-          <InputsList />
-          <List />
+          <SearchBar />
+            <Player />
+            <Sidebar />
         </Provider>
       </div>
     );
