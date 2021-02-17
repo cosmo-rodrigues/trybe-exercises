@@ -60,12 +60,16 @@ const resetGame = () => {
   return (
     <main>
       <h1 className="title">Tic Tac Toe</h1>
-      <div className={`board ${winner? 'game-over' : ''}`}>
+      <div
+        className={`board ${winner? 'game-over' : ''}`}
+        data-testid="board"
+      >
         {board.map((item, index) => (
           <div
             key={index}
             className={`cell ${item}`}
             onClick={() => handleCellClic(index)}
+            data-testid="cell"
           >
             {item}
           </div>

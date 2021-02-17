@@ -18,7 +18,8 @@ describe('Check all inputs and lables', () => {
     render(<App />);
     const buttons = screen.getAllByRole('button');
     expect(buttons).toHaveLength(2);
+    expect(buttons.length).toBe(2);
     expect(buttons[0].value).toBe('Enviar');
-    expect(buttons[1].value).toBe('Voltar')
+    expect(buttons[1]).toHaveValue('Voltar');
   });
 })
