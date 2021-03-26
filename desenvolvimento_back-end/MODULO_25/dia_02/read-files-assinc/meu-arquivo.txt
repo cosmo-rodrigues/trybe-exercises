@@ -1,0 +1,8 @@
+Método fs.readFileSync
+Esse método é responsável por ler arquivos e trazer seu conteúdo para dentro do NodeJS. Por ser síncrono , ele espera a leitura do arquivo terminar para, só então, atribuir o resultado à constante data .
+O método readFileSync recebe dois parâmetros:
+O nome do arquivo;
+Um parâmetro opcional que, quando é uma string, define o encoding que será utilizado durante a leitura do arquivo.
+Mas e se ocorrer um erro na leitura do arquivo?
+Com funções síncronas, como readFileSync , você deve tratar explicitamente os erros que puderem acontecer. Nesse exemplo, usamos um bloco try...catch para capturar quaisquer erros que possam acontecer durante a leitura do arquivo e imprimimos uma mensagem para o usuário no terminal.
+Agora vamos resolver o probleminha que estamos tendo ao tentar ler o arquivo!
