@@ -17,9 +17,14 @@
 
 # print("O número sorteado era: ", guess)
 
-import sys
+# x, y = 5, 3
+
+# print(f"{x} / {y} = {x/y:.2f}")
 
 
-if __name__ == "__main__":
-    for argument in sys.argv:
-        print("Received -> ", argument)
+# print(f"{5::^5}")
+
+name = input("Qual o seu nome ? ")
+name_list = list(name)
+for nome in name_list:
+    print(nome.upper())
