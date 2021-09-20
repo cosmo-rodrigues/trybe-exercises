@@ -1,17 +1,17 @@
+from bs4 import BeautifulSoup
 import requests
-from parsel import Selector
+
+# from parsel import Selector
 
 
 url_1 = "https://www.jornalcontabil.com.br/codigo-dos-bancos"
 url_2 = "-lista-atualizada-com-todos-os-bancos-brasileiros/"
 url = url_1 + url_2
 response = requests.get(url)
-selector = Selector(text=response.text)
+site = BeautifulSoup(response.text, "html.parser")
 
-lista = []
-for table in selector.xpath(
-    '//*[@id="post-163389"]/div[4]/figure[1]/table/tbody'
-):
-    title = table.xpath("//tr").getall()
-    for bacno in title:
-        print("BANCO: \n", bacno)
+banks_list = site.select("tbody tr")
+
+result = []
+for bank in banks_list:
+    print("Banco: \n", bank.text, "\n\n")
